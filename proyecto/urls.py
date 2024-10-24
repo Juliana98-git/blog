@@ -24,5 +24,6 @@ urlpatterns = [
     path('Perfil/', views.Perfil, name='Perfil'),
     path('Noticias/', views.Noticias, name='Noticias'),
     path('Peliculas/', views.Peliculas, name='Peliculas'),
+    path('Registrarse/', views.Registrarse, name='Registrarse'),
     path('admin/', admin.site.urls),
 ]

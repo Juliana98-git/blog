@@ -15,3 +15,6 @@ def Peliculas(request):
 
 def Iniciar_sesion(request):
     return render(request, 'app/inicio_sesion.html')
+
+def Registrarse(request):
+    return render(request, 'app/registrarse.html')
