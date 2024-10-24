@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFOCINE - {% block title %} {% endblock %} </title>
+</head>
+
+<body>
+<!-- CABECERA -->
+<ul>
+    <li> <a href="{% url 'home' % }">Pagina principal</a> </li>
+    <li> <a href="{% url 'Iniciar_sesion' % }>"Inicio de sesion</a> </li>
+    <li> <a href="{% url 'Perfil' % }">Perfil</a> </li>
+    <li> <a href="{% url 'Noticias' % }">Noticias</a> </li>
+    <li> <a href="{% url 'Peliculas' % }">Peliculas</a> </li>
+</ul>
+
+<!-- CONTENIDO -->
+{% block content %} {% endblock %}
+
+
+</body>
+</html>
